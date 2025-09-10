@@ -1,0 +1,52 @@
+sudo apt update
+sudo apt upgrade
+exit
+cd /
+ll
+cd /home/
+ll
+cd /home/franco/
+ll
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit/
+git clone https://github.com/FrancoStorgato/TP_AySO.git
+sudo apt install git
+git clone https://github.com/FrancoStorgato/TP_AySO.git
+cd TP_AySO/
+ls -l
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+echo “Usuario=$(whoami)” > datos_usuario.txt
+whoami
+git add.
+git add .
+git config --global user.email francostorgato@gmail.com
+git config --global user.name FrancoStorgato
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+
+git config --global user.name "FrancoStorgato"
+git push
+git add .
+git config --global user.email "francostorgato@gmail.com"
+git config --global user.name "FrancoStorgato"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git add .
+git commit -m "ADD: agregado los datos de CPU a datos_usuarios.txt"
+cat <<EOF >> README.md
+Alumno: Franco Storgato.
+Division: 315 Turno: Noche
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
